@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main * {
+    border-radius: 15px;
+}
+
+main {
+    grid-area: m;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    height: 100vh;
+}
+
+aside {
+    grid-area: a;
+    position: relative;
+}
+
+aside button {
+    position: relative;
+
+}
+
+body {
+    display: grid;
+    grid-template-areas: "m s a";
+    grid-template-columns: 2fr 20px 1fr;
+
+}
+
+.add-cont {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.write-to {
+    margin-left: 10px;
+    height: 40vh;
+}
+
+.write-to .text-area {
+    resize: vertical;
+    width: 93%;
+    max-height: 90%;
+}
+
+.exp-imp {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    gap: 10px;
+    flex-wrap: wrap;
+}
