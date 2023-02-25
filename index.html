@@ -7,26 +7,26 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-	<script src="sketch.js"></script>
+	<script src="./JS/sketch.js"></script>
 	<aside>
 		<div class="add-cont">
-			<button class="new-cer">اضافة دائرة</button>
-			<button class="new-cub">اضافة مربع</button>
-			<button class="new-img">اضافة صورة</button>
-			<button class="new-txt">اضافة خانة كتابة</button>
+			<button onclick="addcub()" class="new-cer">اضافة دائرة</button>
+			<button onclick="addcir()" class="new-cub">اضافة مربع</button>
+			<button onclick="addimg()" class="new-img">اضافة صورة</button>
+			<button onclick="addtxt()" class="new-txt">اضافة خانة كتابة</button>
 		</div>
 		<div class="write-to">
 			<textarea class="text-area" type="text"></textarea>
 			<input class="color-picker" type="color">
 		</div>
 		<div class="exp-imp">
-			<button class="take-photo">أخذ كصورة</button>
-			<button class="take-project">أخذ كمشروع</button>
-			<button class="import-project">تحميل مشروع</button>
+			<button onclick="takePhoto()" class="take-photo">أخذ كصورة</button>
+			<button onclick="takeProject()" class="take-project">أخذ كمشروع</button>
+			<button onclick="importProject()" class="import-project">تحميل مشروع</button>
 		</div>
 	</aside>
 </body>
